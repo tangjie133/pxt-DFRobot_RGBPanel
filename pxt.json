@@ -1,5 +1,5 @@
 {
-    "name": "pxt-DFRobot_RGBPanel",
+    "name": "DFRobot_RGBPanel",
     "version": "0.0.1",
     "description": "",
     "dependencies": {
@@ -11,6 +11,7 @@
         "main.blocks",
         "main.ts",
         "README.md",
+        "_locales/zh-cn/DFRobot_RGBPanel-strings.json",
         "custom.ts"
     ],
     "testFiles": [
