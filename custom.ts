@@ -44,7 +44,7 @@ namespace custom {
      * @param s 需要显示的字符串, eg: "DFRobo"
      * @param e 显示颜色枚举
      */
-    //% block="set string %s for color %e"
+    //% block="display string %s for color %e"
     //% weight=99
     export function print(s: string, e: MyColorEnum): void {
        let len = s.length();
