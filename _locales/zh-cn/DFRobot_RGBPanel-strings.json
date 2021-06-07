@@ -15,6 +15,7 @@
     "custom.pixel|block":"在 X %x Y %y 像素点显示颜色为 %e",
     "custom.clear|block":"清空显示",
     "custom.fillScreen|block":"全部显示为 %e",
-    "custom.display|block":"显示表情 %index 颜色为 %e"
+    "custom.display|block":"显示表情 %index 颜色为 %e",
+    "custom|block":"LED点阵表情板"
     
 }
