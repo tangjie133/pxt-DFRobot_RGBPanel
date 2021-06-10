@@ -22,6 +22,54 @@ enum MyColorEnum {
     //% block = "quench"
     QUENCH=0
 }
+enum MyMemeEnum{
+    //% block="Dizzy"
+    DIZZY,
+    //% block="Naughty"
+    NAUGHTY,
+    //% block="Rolling eyes"
+    ROLLINGEYES,
+    //% block="Sad"
+    SAD,
+    //% block="Honest"
+    HONEST,
+    //% block="Wink"
+    Wink,
+    //% block="Happy"
+    HAPPY, 
+    //% block="Question Mark"
+    QUESTIONMARK, 
+    //% block="Worried"
+    WORRIED,
+    //% block="Pleading face"
+    PLEADING,
+    //% block="Expressionless"
+    EXPRESSIONLESS,
+    //% block="Serious"
+    SERIOUS, 
+    //% block="Robot"
+    ROBOT, 
+    //% block="Disapointed"
+    DISAPOINTED, 
+    //% block="Sweet"
+    SWEET, 
+    //% block="Nerd face"
+    NERDFACE, 
+    //% block="Cute"
+    CUTE, 
+    //% block="Astonished"
+    ASTONISHED, 
+    //% block="Anguished"
+    ANGUISHED, 
+    //% block="Satisfied"
+    SATISFIED, 
+    //% block="Act cute"
+    ACTCUTE,
+    //% block="Dazzled"
+    DAZZLED, 
+    //% block="Laugh"
+    LAUGH
+}
 enum MyDirEnum{
     //% block="left"
     LEFT = (0X0 << 1),
@@ -140,9 +188,8 @@ namespace custom {
      * @param e 显示颜色
      */
     //% block="dispaly expression %index for color %e"
-    //% index.min=0 index.max=22
     //% weight=94
-    export function display(index:number,e:MyColorEnum):void{
+    export function display(index:MyMemeEnum,e:MyColorEnum):void{
         let buf = pins.createBuffer(6);
         buf[0] = 0x02;
         buf[1] = (dir & (0xe6)) | (0x02 << 3);
